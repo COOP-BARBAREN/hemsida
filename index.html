@@ -5,114 +5,127 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Barbaren</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   background: #d8c6ad;
   color: #111;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
 /* MENU */
 .menu {
   display: flex;
-  justify-content: space-around;
-  padding: 20px 10px;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+/* LOGO */
+.logo {
+  font-family: 'Franxurter', sans-serif; /* fallback */
+  font-size: 64px;
+  color: #8b1e1e;
+  margin: 40px 20px 10px;
+  letter-spacing: 1px;
+}
+
+/* HOURS */
+.hours {
+  margin: 50px 20px;
   font-size: 14px;
   letter-spacing: 2px;
 }
 
-.menu a {
-  text-decoration: none;
-  color: black;
-}
-
-/* LOGO TEXT */
-.logo {
-  font-size: 48px;
-  font-weight: bold;
-  color: #8b1e1e;
-  margin: 20px 0;
-}
-
-/* OPENING HOURS */
-.hours {
+.hours-row {
   display: flex;
-  justify-content: space-around;
-  margin: 30px 10px;
-  font-size: 16px;
-  letter-spacing: 3px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.hours div {
-  text-align: left;
+/* MAP */
+.map {
+  margin: 50px 0;
+  text-align: center;
 }
 
-/* MAP IMAGE */
 .map img {
-  width: 90%;
-  max-width: 400px;
-  margin: 30px 0;
+  width: 85%;
+  max-width: 420px;
 }
 
 /* FOOTER */
 .footer {
-  font-size: 14px;
-  padding: 20px;
-  line-height: 1.8;
+  padding: 40px 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.address {
+  margin-bottom: 20px;
+}
+
+.contact {
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
 .socials {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  font-weight: bold;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- MENU -->
 <div class="menu">
-  <a href="#">HEM</a>
-  <a href="#">MENY</a>
-  <a href="#">KONTAKT</a>
-  <a href="#">OM OSS</a>
+  <div>HEM</div>
+  <div>MENY</div>
+  <div>KONTAKT</div>
+  <div>OM OSS</div>
 </div>
 
-<!-- LOGO -->
 <div class="logo">BARBAREN</div>
 
-<!-- OPENING HOURS -->
 <div class="hours">
-  <div>
-    Onsdag<br>
-    Fredag
+  <div class="hours-row">
+    <div>Onsdag</div>
+    <div>17 – 23</div>
   </div>
-  <div>
-    Torsdag<br>
-    Lördag
+  <div class="hours-row">
+    <div>Torsdag</div>
+    <div>17 – 23</div>
   </div>
-  <div>
-    17 - 23<br>
-    15 - 00
+  <div class="hours-row">
+    <div>Fredag</div>
+    <div>15 – 00</div>
+  </div>
+  <div class="hours-row">
+    <div>Lördag</div>
+    <div>15 – 00</div>
   </div>
 </div>
 
-<!-- MAP IMAGE -->
 <div class="map">
   <img src="karta.png" alt="Karta">
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
-  Amiralsgatan 47<br>
-  214 37 Malmö Sverige<br><br>
+  <div class="address">
+    Amiralsgatan 47<br>
+    214 37 Malmö Sverige
+  </div>
 
-  Kontakt: Info@Barbaren.se
+  <div class="contact">
+    Info@Barbaren.se
+  </div>
 
   <div class="socials">
     <div>INSTAGRAM</div>
