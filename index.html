@@ -25,13 +25,15 @@ body {
   font-weight: 600;
 }
 
-/* LOGO */
+/* LOGO IMAGE */
 .logo {
-  font-family: 'Franxurter', sans-serif; /* fallback */
-  font-size: 64px;
-  color: #8b1e1e;
-  margin: 40px 20px 10px;
-  letter-spacing: 1px;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.logo img {
+  width: 70%;
+  max-width: 320px;
 }
 
 /* HOURS */
@@ -63,10 +65,11 @@ body {
   padding: 40px 20px;
   font-size: 13px;
   letter-spacing: 1px;
+  text-align: center; /* FIX */
 }
 
 .address {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact {
@@ -79,6 +82,7 @@ body {
   justify-content: space-between;
   font-size: 12px;
   letter-spacing: 2px;
+  margin-top: 20px;
 }
 </style>
 </head>
@@ -92,7 +96,10 @@ body {
   <div>OM OSS</div>
 </div>
 
-<div class="logo">BARBAREN</div>
+<!-- LOGO SOM BILD -->
+<div class="logo">
+  <img src="hemsida.png" alt="Barbaren logotyp">
+</div>
 
 <div class="hours">
   <div class="hours-row">
@@ -124,7 +131,7 @@ body {
   </div>
 
   <div class="contact">
-    Info@Barbaren.se
+    info@barbaren.se
   </div>
 
   <div class="socials">
